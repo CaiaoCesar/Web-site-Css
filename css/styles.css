@@ -1,0 +1,31 @@
+.logoSite{
+    width: 10%;
+    height: 200px;
+}
+
+.capa-pg1{
+    width: auto;
+    height: auto;
+}
+
+.segunda-pg1{
+    width: auto;
+    height: auto;
+}  
+
+.terceira-pg1{
+    width: auto;
+    width: auto;
+}
+
+.tabela1, .tabela2{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th, td{
+    padding: 8px;
+    border: 1px solid black;
+}
