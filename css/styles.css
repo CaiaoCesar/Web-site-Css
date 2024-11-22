@@ -1,6 +1,12 @@
+.logo-superflix{
+    display: flex; /*Alinha texto e imagem*/
+    align-items: center;
+    gap: 10px;
+}
+
 .logoSite{
-    width: 10%;
-    height: 200px;
+    width: 50px; /*Tamanho e largura imagem*/
+    height: 50px;
 }
 
 .capa-pg1{
@@ -12,6 +18,12 @@
     width: auto;
     height: auto;
 }  
+
+.aberturas{
+    display: flex; /*Centraliza a div*/
+    justify-content: center;
+    gap: 90px;
+}
 
 .terceira-pg1{
     width: auto;
@@ -25,7 +37,34 @@
     text-align: center;
 }
 
-th, td{
+.th, td{
     padding: 8px;
     border: 1px solid black;
 }
+
+.filme-pg2{
+    width: 30px;
+    height: 20px;
+}
+
+.player-filme {
+   text-align: center;
+}
+
+.formulario2 {
+    position: relative;
+    background-image: url('../images/feedback.jpg'); /* Imagem de fundo */
+    background-size: contain; /* Ajusta o tamanho da imagem */
+    background-position: center; /* Centraliza a imagem */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-family: 'Potta One', sans-serif; /* Fonte personalizada */
+    font-size: large; /* Tamanho do texto */
+    font-weight: 400; /* Peso padrão da fonte */
+    color: white; /* Cor do texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição semitransparente */
+    background-blend-mode: overlay; /* Mistura o fundo com a cor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra ao redor */
+}
+
+  

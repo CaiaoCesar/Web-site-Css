@@ -6,9 +6,13 @@
     <meta name="description" content="SuperFl¹¹z - Site do Inazuma Eleven(Soccer). Com Episódios e Bônus!">
     <title>Form</title>
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <img class="logoSite" src="images/LogoSite.png" alt="Logo do Site SuperFl¹¹z">
     <nav>
         <ul>
             <li><a href="index.html">Página Inicial</a></li>
@@ -28,146 +32,104 @@
     Vamos ouvir você agora mesmo! Envie seu feedback. 😊
     </p>
 
-    <h2>Formulários:</h2>
+    <hr>
+    <h2>Gostariamos de conhecer você:</h2>
+    <form class="formulario1" action="dados-user" method="post">
+        <fieldset>
+            <legend>Dados Pessoais e Feedback:</legend>
 
-    <form action="" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
 
-        <label for="nota">Qual sua sugestão pro site?</label>
-        <textarea name="nota" id="nota" rows="4"></textarea><br>
+            <label for="notaSite">Minha nota pro SuperFl¹¹z: (1 a 5)</label>
+            <select name="notaSite" id="notaSite">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-        <button type="submit">Enviar</button>
+            <p>Indicaria o site pra um amigo?</p>
+            <input type="radio" id="sim" name="gostou" value="sim">
+            <label for="sim">Sim.</label><br>
+
+            <input type="radio" id="nao" name="gostou" value="nao">
+            <label for="nao">Não.</label><br>
+
+            <label for="sugestao">Qual sua sugestão pro site?</label>
+            <textarea name="sugestao" id="sugestao" rows="4" placeholder="Escreva suas sugestões aqui..."></textarea><br>    
+
+            <p>Suas sugestões são de grande importância para nós.</p>            
+            <p>Agradecemos pelo contato!</p>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    
     </form>
-    
-    
-    Nome: (Para que possamos te identificar, se preferir)
-    E-mail: (Opcional, caso deseje receber uma resposta)
-    Qual a sua experiência geral com o site?
-    Excelente
-    Boa
-    Regular
-    Ruim
-    O que você mais gostou no SuperFl¹¹z? (Caixa de texto)
-    Algo que você acha que podemos melhorar? (Caixa de texto)
-    Deixe sua sugestão ou comentário: (Caixa de texto maior)
-    Você indicaria nosso site para um amigo? (Sim/Não)
 
     <hr>
-    <h2>Alguns Personagens para ficar de Olho: </h2>
-        <section>
-            <h3>Primeira Temporada:</h3>
-            <table class="tabela1">
-                <tr>
-                    <th>Nome</th>
-                    <th>Time</th>
-                    <th>Posição</th>
-                    <th>Nº Camisa</th>
-                    <th>Habilidade Especial</th>
-                </tr>
+    <section class="formulario2">
+        <h2>Você sendo um Super:</h2>
+        <form class="form2" action="/informacoes-user" method="post">
+                <fieldset>
+                    <legend>Você é o nosso Capitão!</legend>
 
-                <tr>
-                    <td>Mamaoru Endo</td>
-                    <td>Raimon Eleven</td>
-                    <td>Goleiro</td>
-                    <td>1</td> 
-                    <td>Mão Fantasma</td>
-                </tr>
+                    <label for="nota">Quão bom você é no Futebol?</label>
+                    <select name="nota" id="nota">
+                        <option value="ruim">Ruim</option>
+                        <option value="razoavel">Razoável</option>
+                        <option value="bom">Bom</option>
+                        <option value="excelente">Excelente</option>
+                        <option value="craque">Craque</option>
+                    </select>
 
-                <tr>
-                    <td>Shuuya Gouenji</td>
-                    <td>Raimon Eleven</td>
-                    <td>Atacante</td>
-                    <td>10</td> 
-                    <td>Tornado de Fogo</td>
-                </tr>
+                    <label for="nivel"><br><br>Quão fã você é de Super Onze?</label>
+                    <input type="range" id="nivel" name="nivel" min="1" max="100" step="1">
 
-                <tr>
-                    <td>Ryougo Someoka</td>
-                    <td>Raimon Eleven</td>
-                    <td>Atacante</td>
-                    <td>11</td> 
-                    <td>Lança Dragão</td>
-                </tr>
+                    <p>Que número você gostaria de usar se tivesse no time do Super Onze?</p>
+                    <label for="numero">Número:</label>
+                    <input type="number" id="numero" name="numero"><br>
 
-                <tr>
-                    <td>Ichirouta Kazemaru</td>
-                    <td>Raimon Eleven</td>
-                    <td>Lateral Direito</td>
-                    <td>2</td> 
-                    <td>Rodopio de Vento</td>
-                </tr>
-                
-                <tr>
-                    <td>Kazuya Ichinose</td>
-                    <td>Raimon Eleven</td>
-                    <td>Meio-Campista</td>
-                    <td>8</td> 
-                    <td>Passes Preciosos</td>
-                </tr>
-            </table>
-        </section>
+                    <p>Quais são os jogadores que você mais gosta dos Super Onze?</p> 
+                    <input type="checkbox" id="endou" name="jogadores" value="endou">
+                    <label for="endou">Endou</label><br>
 
-        <section>
-            <h3>Segunda Temporada:</h3>
-            <table class="tabela2">
-                <tr>
-                    <th>Nome</th>
-                    <th>Time</th>
-                    <th>Posição</th>
-                    <th>Nº Camisa</th>
-                    <th>Habilidade Especial</th>
-                </tr>
+                    <input type="checkbox" id="kidou" name="jogadores" value="kidou">
+                    <label for="kidou">Kidou</label><br>
 
-                <tr>
-                    <td>Mamaoru Endo</td>
-                    <td>Raimon Eleven</td>
-                    <td>Goleiro</td>
-                    <td>1</td> 
-                    <td>Mão Dimensional</td>
-                </tr>
+                    <input type="checkbox" id="gouenji" name="jogadores" value="gouenji">
+                    <label for="gouenji">Gouenji</label><br>
 
-                <tr>
-                    <td>Tachimukai Yuuki</td>
-                    <td>Raimon Eleven</td>
-                    <td>Goleiro</td>
-                    <td>22</td> 
-                    <td>Mão Majestosa</td>
-                </tr>
+                    <input type="checkbox" id="kazemaru" name="jogadores" value="kazemaru">
+                    <label for="kazemaru">Kazemaru</label><br>
 
-                <tr>
-                    <td>Fubuki Shirou</td>
-                    <td>Raimon Eleven</td>
-                    <td>Atacante</td>
-                    <td>9</td> 
-                    <td>Tempestade Eterna</td>
-                </tr>
+                    <input type="checkbox" id="fubuki" name="jogadores" value="fubuki">
+                    <label for="fubuki">Fubuki</label><br>
 
-                <tr>
-                    <td>Hiroto Kiyami</td>
-                    <td>Gênesis</td>
-                    <td>Atacante</td>
-                    <td>11</td> 
-                    <td>Besta Éter</td>
-                </tr>
+                    <input type="checkbox" id="someoka" name="jogadores" value="someoka">
+                    <label for="someoka">Someoka</label><br>
 
-                <tr>
-                    <td>Midorikawa Ryuuji</td>
-                    <td>Gênesis/Raimon</td>
-                    <td>Meio-Campista</td>
-                    <td>6</td> 
-                    <td>Arco Celestial</td>
-                </tr>
-            </table>
-        </section>
+                    <input type="checkbox" id="kabeyama" name="jogadores" value="kabeyama">
+                    <label for="kabeyama">Kabeyama</label><br>
+
+                    <input type="checkbox" id="tsunami" name="jogadores" value="tsunami">
+                    <label for="tsunami">Tsunami</label><br>
+
+                    <input type="checkbox" id="outro" name="jogadores" value="outro">
+                    <label for="outro">Outro</label><br>
+
+                    <label for="skill"><br>Que Habilidade do Super Onze gostaria de ter?:</label>
+                    <input type="text" id="skill" name="skill"><br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+        </form>
+    </section>
     <hr>
     <footer>
         <p><b>© 2024 SuperFl¹¹z. Todos os direitos reservados.</b></p>
     </footer>
-
 </body>
 </html>
-
