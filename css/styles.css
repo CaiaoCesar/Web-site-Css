@@ -1,95 +1,333 @@
-.logo-superflix{
-    display: flex; /*Alinha texto e imagem*/
-    align-items: center;
-    gap: 10px;
+header {
+    background-color: #333;
+    color: white;
+    padding: 0;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 50;
+    font-style: normal;
 }
 
-.logoSite{
-    width: 50px; /*Tamanho e largura imagem*/
-    height: 50px;
+footer {
+    background-color: #333;
+    color: aqua;
+    padding: 10px 20px;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Impact, sans-serif;
+    background-color: burlywood;
     line-height: 1.6;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    outline: 100px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.capa-pg1{
-    width: auto;
-    height: auto;
+nav ul li a:hover {
+    color: yellow;
 }
 
-.segunda-pg1{
-    width: auto;
-    height: auto;
-}  
+nav ul li a:active {
+    color: orangered;
+}
 
-.aberturas{
-    display: flex; /*Centraliza a div*/
+.caixa-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 30px;
+    margin-top: 10px;
 }
 
-.terceira-pg1{
-    width: auto;
-    width: auto;
+.caixa-logo h1 {
+    margin: 0;
+    font-size: 1rem;
 }
 
-.tabela1, .tabela2{
+.caixa-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.logo-superflix {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoSite {
+    width: 50px;
+    height: 50px;
+}
+
+.capa-pg1, .segunda-pg1, .terceira-pg1 {
     width: 100%;
-    border-collapse: collapse;
-    border: 1px solid black;
-    text-align: center;
+    height: 500px;
 }
 
-.th, td{
+th, td {
     padding: 8px;
     border: 1px solid black;
 }
 
-.filme-pg2{
-    width: 30px;
-    height: 20px;
+#sinopse {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Potta One', sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#aberturas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#aberturas iframe {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.temporadas img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.temporadas iframe {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.temporadas h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Potta One', sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.filme-pg2 {
+    position: relative;
+    background-image: url('../images/inazuma_eleven_the_movie_thumbnail_16x9_widescreen_bpor.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', sans-serif;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .player-filme {
-   text-align: center;
+    text-align: center;
+}
+
+.player-filme iframe {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
+.tabela1 {
+    position: relative;
+    background-image: url('../images/tabela1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tabela2 {
+    position: relative;
+    background-image: url('../images/tabela2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.formulario1 {
+    position: relative;
+    background-image: url('../images/form.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .formulario2 {
     position: relative;
-    background-image: url('../images/feedback.jpg'); /* Imagem de fundo */
-    background-size: contain; /* Ajusta o tamanho da imagem */
-    background-position: center; /* Centraliza a imagem */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    font-family: 'Potta One', sans-serif; /* Fonte personalizada */
-    font-size: large; /* Tamanho do texto */
-    font-weight: 400; /* Peso padrão da fonte */
-    color: white; /* Cor do texto */
-    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição semitransparente */
-    background-blend-mode: overlay; /* Mistura o fundo com a cor */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra ao redor */
+    background-image: url('../images/feedback.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-  
+.sobre-superfliz {
+    position: relative;
+    background-image: url('../images/fundosobre.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        border-left: none;
+        border-right: none;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .caixa-logo {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .caixa-logo img {
+        max-width: 70px;
+    }
+
+    .tabela1, .tabela2 {
+        font-size: 0.8rem;
+    }
+
+    #aberturas {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #aberturas iframe {
+        max-width: 100%;
+        height: 180px;
+    }
+
+    .temporadas {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .temporadas img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .temporadas iframe {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .temporadas h3 {
+        font-size: 1.2rem;
+    }
+
+    .formulario1, .formulario2, .sobre-superfliz, .filme-pg2 {
+        background-size: cover;
+    }
+
+    .player-filme iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}

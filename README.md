@@ -1,27 +1,57 @@
 Caio César Oliveira Silva 
 
 Descrição da Atividade: 
+# ✍️ Instruções para a atividade
+
+O objetivo desta atividade é que você ponha em prática o que você pode aprender de HTML e CSS até aqui.  Você irá criar um site com no **mínimo 5 páginas**, sobre o tema que você quiser, utilizando HTML e CSS. A estrutura e o conteúdo de cada página deve ser diferente. O conteúdo pode ser fictício, use a sua criatividade.
+
 1. Crie um novo repositório público no GitHub
     - Coloque seu nome completo no arquivo README.md juntamente com a descrição da atividade.
-2. O seu projeto deve conter pelo menos 3 páginas `.html`
-    1. A página principal deve ser a  `index.html`, as outras, você mesmo pode definir os nomes dos arquivos.        
-    2. Todas as páginas devem possuir um "menu" para navegação com **TODAS** as páginas do site.
-        - Padronize o menu para todas as páginas.
-        - Utilize uma lista não ordenada com link para cada uma das páginas.
-3. Requisitos mínimos que o seu projeto deve possuir.
-    1. Respeitar a estrutura básica de uma página HTML.
-    2. Elementos de texto.
-        - Utilize corretamente os elementos de texto. Parágrafos, cabeçalhos de sessão, elementos para ênfase, etc…
-    3. Imagens.
-        - Coloque todas as suas imagens dentro de uma pasta `images`.
-        - Utilize pelo menos 5 imagens no seu projeto.
-    4. Vídeo do YouTube.
-        - Utilize a ferramenta de importação do próprio YouTube.
-    5. Formulários
-        - Utilize ao menos dois formulários no projeto.
-        - Cada formulário deverá possuir no mínimo cinco controles de entrada.
-    6. Tabela
-        - Utilize ao menos duas tabelas no projeto.
-        - Cada formulário deverá possuir no mínimo cinco colunas e cinco linhas.
-    7. Link para outros sites da internet
-4. Faça o ***Deploy*** do seu projeto
+2. O seu projeto deve pelo menos 5 páginas `.html`
+    - A página principal deve ser a  `index.html` as outras você pode definir os nomes
+        
+        <aside>
+        ⚠️ Ao dar nome aos arquivos `.html`, não use espaços ou acentuações (facilita a vida de todo mundo)
+        
+        </aside>
+        
+    - Todo o código CSS do seu projeto deve estar em um único arquivo, `style.css` dentro de uma pasta com o nome `css`
+    - Coloque todas as suas imagens dentro da pasta `images`
+3. Requisitos **mínimos de conteúdo** que o seu projeto deve possuir :
+    - Respeitar a estrutura básica e a sintaxe do HTML e CSS.
+    - Cabeçalho (padronizado em todas as páginas).
+        - Logo, título do site e menu.
+            
+            <aside>
+            ⚠️ Todas as páginas devem estar no menu de navegação. Padronize o menu para todas as páginas.
+            
+            </aside>
+            
+    - Rodapé (padronizado em todas as páginas).
+        - Informações de contato e redes sociais.
+    - Elementos de texto.
+    - Imagens.
+    - Vídeo do YouTube.
+    - Lista com subitens.
+    - Formulário.
+4. Requisitos de CSS:
+    - O conteúdo do site deve estar centralizado horizontalmente, com margens aparentes (não deve ocupar toda a largura da tela).
+    - Utilize de todos os tipos de seletores.
+    - Utilização de pseudo-classes.
+    - Mínimo de 3 cores diferentes.
+    - Mínimo de 3 fontes diferentes.
+        - Ao menos uma deve ser não nativa, ou seja, utilize um arquivo de fonte para importar no seu projeto.
+    - Conteúdos organizados lado-a-lado.
+5. Faça o *Deploy* do seu projeto.
+
+### 🏁 Entregando a atividade
+
+Responda a atividade **#03 no Classroom** com:
+
+- O link para o repositório.
+- O link do domínio do seu projeto publicado na internet.
+
+### 🧐 Observações
+
+- Fique à vontade para adicionar mais elementos além dos mínimos citados acima.
+- O conteúdo pode ser fictício!
