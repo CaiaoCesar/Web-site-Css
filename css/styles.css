@@ -186,8 +186,7 @@ th, td {
     aspect-ratio: 16 / 9;
     border-radius: 10px;
 }
-
-.tabela1 {
+.tabela1, .tabela2 {
     position: relative;
     background-image: url('../images/tabela1.jpg');
     background-size: cover;
@@ -201,22 +200,20 @@ th, td {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow-x: auto; 
 }
 
-.tabela2 {
-    position: relative;
-    background-image: url('../images/tabela2.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: 'Potta One', sans-serif;
-    font-size: large;
-    font-weight: 400;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+.tabela1 table, .tabela2 table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; 
+}
+
+.tabela1 th, .tabela2 th, .tabela1 td, .tabela2 td {
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+    word-wrap: break-word; 
 }
 
 .formulario1 {
@@ -269,7 +266,7 @@ th, td {
 
 @media (min-width: 1024px) {
     .temporadas img {
-        max-width: 800px; /* Defina um tamanho adequado para telas grandes */
+        max-width: 800px; 
     }
 }
 
@@ -296,7 +293,23 @@ th, td {
     }
 
     .tabela1, .tabela2 {
-        font-size: 0.8rem;
+        font-size: 0.8rem; 
+    }
+
+   
+    .tabela1, .tabela2 {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    .tabela1 table, .tabela2 table {
+        width: 100%;
+        max-width: 100%; 
+        overflow-x: auto; 
+    }
+
+    .tabela1 th, .tabela2 th, .tabela1 td, .tabela2 td {
+        word-wrap: break-word; 
     }
 
     #aberturas {
